@@ -59,7 +59,7 @@ class Motor_HRH_Decisao:
         return {"Teses": teses}
 
 # ==================== 2. REPOSITÓRIO DE "DNA ESTILÍSTICO" (EXTRAÍDO DOS ARQUIVOS) ====================
-# [span_0](start_span)[span_1](start_span)[span_2](start_span)[span_3](start_span)Textos retirados diretamente dos arquivos 'Modelão' e 'Maria do Ceu'[span_0](end_span)[span_1](end_span)[span_2](end_span)[span_3](end_span)
+# [span_0](start_span)[span_1](start_span)[span_2](start_span)[span_3](start_span)Textos retirados diretamente dos arquivos 'Modelão' [span_0](end_span)[span_1](end_span)[span_2](end_span)[span_3](end_span)
 
 TEXTOS_PADRAO = {
     "HEADER": """
@@ -114,12 +114,12 @@ class Gerador_Contestacao:
         style = self.doc.styles['Normal']
         font = style.font
         font.name = 'Arial' # Fonte extraída do mimetismo
-        font.size = Pt(12)
+        font.size = Pt(11)
         
         par = style.paragraph_format
         par.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
         par.line_spacing = 1.5
-        par.space_after = Pt(12)
+        par.space_after = Pt(11)
 
     def adicionar_bloco(self, titulo_chave: str, texto_template: str, dados: Caso):
         """Injeta o texto formatando as variáveis dinamicamente"""
